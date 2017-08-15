@@ -1,6 +1,6 @@
 ---
 title: About
-date: {}
+date: 2017-08-14T18:17:22-06:00
 published: true
 ---
 
@@ -9,4 +9,3 @@ published: true
 This is about.
 
 ![jimbo-skull.jpg](static/images/jimbo-skull.jpg)
-
