@@ -1,6 +1,9 @@
 ---
 published: true
 title: Second Post
+date: '2017-08-14'
+tags:
+  - blog
 ---
 ## A New Post
 
