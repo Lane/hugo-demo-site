@@ -1,4 +1,8 @@
-baseURL = "http://hugo-demo.s3-website-us-east-1.amazonaws.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Sample Site"
 theme = "minos"
+relativeurls = true
+canonifyurls = false
+paginate = 10
+pluralizelisttitles = false

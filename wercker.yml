@@ -1,13 +1,21 @@
 
-box: debian
+box: node:4.2.6-slim
 build:
   steps:
+    - install-packages:
+        packages: unzip
+    - script:
+        name: echo
+        code: |
+          echo "Starting build"
     - arjen/hugo-build:
-        version: "HEAD"
+        version: "0.17"
         theme: minos
-        config: config.toml
+deploy:
+  steps:
     - s3sync:
         key-id: $AWS_KEY
         key-secret: $AWS_SECRET
         bucket-url: $AWS_BUCKET
-        source-dir: public
+        source_dir: public/
+        delete-removed: true
