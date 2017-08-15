@@ -9,7 +9,7 @@ build:
         code: |
           echo "Starting build"
     - arjen/hugo-build:
-        version: "0.17"
+        version: "0.24.1"
         theme: minos
 deploy:
   steps:
