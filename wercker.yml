@@ -13,6 +13,10 @@ build:
         theme: minos
 deploy:
   steps:
+    - script:
+        name: echo
+        code: |
+          echo "Starting deploy"
     - s3sync:
         key-id: $AWS_KEY
         key-secret: $AWS_SECRET
