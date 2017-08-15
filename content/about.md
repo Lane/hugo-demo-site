@@ -1,8 +1,12 @@
 ---
-title: "About"
-date: 2017-08-14T18:38:16-06:00
+title: About
+date: {}
+published: true
 ---
 
 # About
 
 This is about.
+
+![jimbo-skull.jpg](static/images/jimbo-skull.jpg)
+
