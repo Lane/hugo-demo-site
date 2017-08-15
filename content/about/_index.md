@@ -8,4 +8,4 @@ published: true
 
 This is about.
 
-![jimbo-skull.jpg](static/images/jimbo-skull.jpg)
+![jimbo-skull.jpg]({{site.baseurl}}/static/images/jimbo-skull.jpg)
