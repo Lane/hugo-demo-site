@@ -5,8 +5,6 @@ published: true
 menu: main
 ---
 
-# About
-
-This is about.
+This is an about page.
 
 ![jimbo-skull.jpg]({{site.baseurl}}/static/images/jimbo-skull.jpg)

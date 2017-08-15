@@ -1,9 +1,7 @@
 
-box: node:4.2.6-slim
+box: debian
 build:
   steps:
-    - install-packages:
-        packages: unzip
     - script:
         name: echo
         code: |
