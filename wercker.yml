@@ -11,6 +11,10 @@ build:
     - arjen/hugo-build:
         version: "0.24.1"
         theme: minos
+    - script:
+      name: replace
+      code: |
+        find . -type f -name "*.html" -exec sed -i 's/{{site.baseurl}}\/static\//\//g' {} +
 deploy:
   steps:
     - script:
