@@ -1,7 +1,7 @@
 ---
 title: Home
-date: 2017-08-15T00:17:22.000Z
+date: 2017-08-15T00:00:00.000Z
 published: true
 ---
 
-Sample Index Page
+Sample Home Page (Master)
