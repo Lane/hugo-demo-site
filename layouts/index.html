@@ -1,20 +1,15 @@
-{{ define "main" }}
-    <main aria-role="main">
-      <header class="homepage-header">
-        <h1>{{.Title}}</h1>
-        {{ with .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
+{{ partial "head.html" . }}
+
+<body>
+<div id="container">
+    {{ partial "header.html" . }}
+    <section id="main" class="outer">
+        {{ partial "article.html" . }}
+        {{ if and (not .Params.nocomment) .Site.Params.disqusShortname }}
+            {{ template "_internal/disqus.html" . }}
         {{ end }}
-      </header>
-      <div class="homepage-content">
-        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-        {{.Content}}
-      </div>
-      <div>
-        <!-- Note that .Data.Pages is the equivalent of .Site.Pages on the homepage template. -->
-        {{ range first 10 .Data.Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-      </div>
-    </main>
-{{ end }}
+    </section>
+    {{ partial "footer.html" . }}
+</div>
+</body>
+</html>
