@@ -1,6 +1,6 @@
 ---
 title: About
-date: 2017-08-15T00:17:22.000Z
+date: '2017-08-14'
 published: true
 menu: main
 ---
