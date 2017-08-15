@@ -6,3 +6,8 @@ build:
         version: "0.26"
         theme: minos
         flags: --buildDrafts=true
+    - s3sync:
+        key-id: $AWS_KEY
+        key-secret: $AWS_SECRET
+        bucket-url: $AWS_BUCKET
+        source-dir: "public"
