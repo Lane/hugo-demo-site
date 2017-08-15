@@ -3,11 +3,11 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.26"
+        version: "HEAD"
         theme: minos
-        flags: --buildDrafts=true
+        config: config.toml
     - s3sync:
         key-id: $AWS_KEY
         key-secret: $AWS_SECRET
         bucket-url: $AWS_BUCKET
-        source-dir: "public"
+        source-dir: public
