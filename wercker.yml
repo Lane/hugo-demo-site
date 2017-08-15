@@ -3,6 +3,6 @@ box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: "1.19.0"
+        version: "0.26"
         theme: minos
         flags: --buildDrafts=true
